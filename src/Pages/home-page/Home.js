@@ -12,7 +12,7 @@ const Home = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        height: '90vh',
+        height: '94vh',
       }}
     >
       <h1 className='HomeLogo'>Hi I'm Clearly</h1>

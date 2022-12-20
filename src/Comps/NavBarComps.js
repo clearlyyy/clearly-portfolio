@@ -14,8 +14,6 @@ export const Nav = styled.nav`
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1000px) / 2);
   z-index: 10;
-  /* Third Nav */
-  /* justify-content: flex-start; */
 `;
 
 export const NavLink = styled(Link)`
@@ -29,7 +27,7 @@ export const NavLink = styled(Link)`
     cursor: pointer;
 
     &.active {
-        color: #15cdfc;
+        color: #8352FD;
     }
 
     &:hover {
@@ -84,7 +82,7 @@ export const NavBtnLink = styled(Link)`
     border-radius: 10px;
     animation-name: ButtonAnimation;
     animation-duration: 1.5s;
-    background: #256ce1;
+    background: #8352FD;
     padding: 10px 22px;
     color: #fff;
     border: none;
