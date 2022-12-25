@@ -6,6 +6,7 @@ import {FaBars} from 'react-icons/fa'
 // nav menu to dissapear and be replaced with a hamburger icon.
 var maxW = '600px';
 
+//
 //why are backticks used as syntax wtf.
 export const Nav = styled.nav`
   background: rgb(9,9,9);
