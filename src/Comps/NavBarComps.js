@@ -6,7 +6,7 @@ import {FaBars} from 'react-icons/fa'
 // nav menu to dissapear and be replaced with a hamburger icon.
 var maxW = '600px';
 
-//
+// 
 //why are backticks used as syntax wtf.
 export const Nav = styled.nav`
   background: rgb(9,9,9);
@@ -105,4 +105,24 @@ export const NavBtnLink = styled(Link)`
         color: #010606;
         transform: scale(1.2) rotate(-2deg);
     }
+`;
+export const NavBtnLink2 = styled(Link)`
+    border-radius: 10px;
+    animation-duration: 1.5s;
+    background: #8352FD;
+    padding: 10px 22px;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+
+    margin-left: 24px;
+
+    @keyframes ButtonAnimation {
+        0% {border-radius: 50px; padding: 0px 22px;}
+        100% {border-radius: 10px; padding: 10px 22px;}
+    }
+
 `;

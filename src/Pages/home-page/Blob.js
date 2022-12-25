@@ -127,8 +127,8 @@ const Blob = () => {
     useFrame((state) => {
         const {clock} = state;
         if(mesh.current) {
-        mesh.current.rotation.x += 0.001;
-        mesh.current.rotation.y += 0.001;
+        mesh.current.rotation.x += 0.004;
+        mesh.current.rotation.y += 0.004;
         mesh.current.material.uniforms.u_time.value = 0.4 * clock.getElapsedTime();
         mesh.current.material.uniforms.u_intensity.value = MathUtils.lerp(
             mesh.current.material.uniforms.u_intensity.value,

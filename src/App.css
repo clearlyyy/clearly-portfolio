@@ -7,6 +7,12 @@
     padding: 0;
 }
 
+.first-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 94vh;
+}
 
 
 body {
@@ -17,7 +23,9 @@ body {
     scrollbar-width: none;
     overflow-y: scroll;
 }
-
+.target {
+    position: relative;
+}
 body::-webkit-scrollbar {
     display: none; /* for Chrome, Safari, and Opera */
   }
@@ -25,8 +33,21 @@ body::-webkit-scrollbar {
 .canvas-container {
     height: 390px;
     width: 310px;
-    left: 50px
 }
+
+.view-btn {
+    position: absolute;
+    transform: translate(35%, 0.5rem);
+    animation: slide-in-home-text-btn ease 1750ms;
+}
+
+.view-btn:hover {
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #010606;
+    transform: translate(35%, 0.5rem) scale3d(1.2,1.2,1) rotate(-2deg);
+}
+
 
 .three-canvas {
     margin-right: 40px;
@@ -44,11 +65,18 @@ body::-webkit-scrollbar {
 .HomeLogo {
     color: white;
     animation: slide-in-home-text ease 1500ms;
+    max-width: 250px;
+
 }
 
 @keyframes typewriter {
     from {width: 0;}
     to {width: 24em;}
+}
+
+@keyframes slide-in-home-text-btn {
+    from {transform: translate(-700%, 0.5rem);}
+    to {transform: translate(35%, 0.5rem);}
 }
 
 @keyframes slide-in-home-text {
