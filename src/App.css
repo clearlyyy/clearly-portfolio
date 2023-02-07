@@ -14,14 +14,84 @@
     height: 94vh;
 }
 
+.githubName {
+	padding-top: 100px;
+	color: #fff;
+	font-weight: 2px;
+}
+
+.githubImage {
+	border-color: rgb(200,200,200);
+	width: 393px;
+	height: 140px;
+}
+.desc-text {
+	color: #fff;
+	margin-left: 19px;
+	margin-right: 15px;
+	
+}
+
+.Header-Text {
+	margin-left: 8px;
+	padding: 10px;
+	color: #fff;
+	font-size: 25px;
+}
+
+.lang-text {
+	color: #fff;
+	justify-content: center;
+	align-items: center;
+}
+
+.lang-box {
+	background-color: #8352FD;
+	display: inline-block;
+	margin-top: 9px;
+	margin-left: 15px;
+	padding: 7px 10px;
+	text-align: center;
+	width: 90px;
+	height: 40px;
+	border-style: solid;
+	border-radius: 10px;
+	border-color: #8352FD;
+}
+.lang-wrapper {
+	position: absolute;
+}
+
+.card-border {
+	border-color: rgb(233, 233, 233);
+	border-style: solid;
+	border-radius: 0px;
+	border-width: 4px;
+	width: 400px;
+	height: 350px;
+}
+
+
+
+.moveAnim{
+	animation: move ease 1000ms;
+}
+@keyframes move {
+	0%{transform: translateY(0);}
+	100%{transform: translateY(-900%);}
+}
+.moveAnimThree{
+	animation: move ease 1500ms;
+}
+
+.invisible {
+	display: none;
+}
+
 
 body {
-    /*background-color: rgb(17, 17, 17);*/
+    /*background-color: rgb(19, 17, 17);*/
     background: linear-gradient(-45deg, #040404, #141414);
-    animation: gradient 15s ease infinite;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    overflow-y: scroll;
 }
 .target {
     position: relative;
