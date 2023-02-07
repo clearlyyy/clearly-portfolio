@@ -7,14 +7,34 @@ import Torus from "./Torus"
 import Blob from "./Blob"
 import {NavBtnLink2} from '../../Comps/NavBarComps';
 import { FaColumns } from 'react-icons/fa';
+import {useState} from 'react';
+
 
 const Home = () => {
-  return (
-    <div className='first-wrapper'>
-      <div className='target'>
+	const [move, setMove] = useState(false);
+	const [moveThree, setMoveThree] = useState(false);
+	const [visible, setVisible] = useState(true);
+	function HandleClickEvent() {
+		console.log("View Work")
+		setMove(true);
+		setMoveThree(true);
+
+		setTimeout(() => {
+			setVisible(false);
+		},900);
+		//setMove(true);
+		//setTimeout(() => setMove(false), 2000);
+		
+	}
+
+  return (	 
+	<div>
+    <div className={visible ? 'first-wrapper' : 'invisible'}>
+      <div className={move ? 'moveAnim' : 'host-wrapper'} id="wrapperhost">
         <h1 className='HomeLogo'>Hi I'm Clearly, im a Developer</h1>
-        <NavBtnLink2 className='view-btn'>View my Work</NavBtnLink2>
+        <NavBtnLink2 onClick={() => HandleClickEvent()} className='view-btn' id='view-work'>View my Work</NavBtnLink2>
       </div>
+	<div className={moveThree ? 'moveAnimThree' : ''}>
       <div className="canvas-container">
       <Canvas className="three-canvas">
         <OrbitControls enableZoom={false}/>
@@ -23,8 +43,9 @@ const Home = () => {
         <Blob/>
       </Canvas>
       </div>
-      
+	  </div>
     </div>
+	  </div>
   );
 
 };
