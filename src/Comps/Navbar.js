@@ -21,6 +21,7 @@ export default function Navbar() {
                 <NavBtnLink>Contact Me</NavBtnLink>
             </NavBtn>
         </NavMenu>
+
     </Nav>
     </>
   )
