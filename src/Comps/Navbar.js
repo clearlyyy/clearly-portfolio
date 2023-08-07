@@ -5,17 +5,17 @@ import {Nav,NavLink,Bars,NavMenu,NavBtn,NavBtnLink} from './NavBarComps';
 export default function Navbar() {
   return (
     <>
-    <Nav>
+    <Nav class="navbar">
         <NavLink to="/">
             <h1 className='Logo'>👨‍💻Clearly</h1>
         </NavLink>
         <Bars/>
         <NavMenu>
-            <NavLink to="/about" activeStyle>
-                About
+            <NavLink to="/work" activeStyle>
+                Work
             </NavLink>
-            <NavLink to="/services" activeStyle>
-                Services
+            <NavLink to="/about" activeStyle>
+                About Me
             </NavLink>
             <NavBtn>
                 <NavBtnLink>Contact Me</NavBtnLink>

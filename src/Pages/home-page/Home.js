@@ -21,6 +21,7 @@ const Home = () => {
 
 		setTimeout(() => {
 			setVisible(false);
+			window.location = "/work"
 		},900);
 		//setMove(true);
 		//setTimeout(() => setMove(false), 2000);
@@ -31,7 +32,7 @@ const Home = () => {
 	<div>
     <div className={visible ? 'first-wrapper' : 'invisible'}>
       <div className={move ? 'moveAnim' : 'host-wrapper'} id="wrapperhost">
-        <h1 className='HomeLogo'>Hi I'm Clearly, im a Developer</h1>
+        <h1 className='HomeLogo'>Hi I'm Clearly, I'm a Developer</h1>
         <NavBtnLink2 onClick={() => HandleClickEvent()} className='view-btn' id='view-work'>View my Work</NavBtnLink2>
       </div>
 	<div className={moveThree ? 'moveAnimThree' : ''}>

@@ -72,7 +72,6 @@
 }
 
 
-
 .moveAnim{
 	animation: move ease 1000ms;
 }
@@ -89,9 +88,15 @@
 }
 
 
-body {
+
+
+html, body {
     /*background-color: rgb(19, 17, 17);*/
-    background: linear-gradient(-45deg, #040404, #141414);
+	margin: 0;
+	height: 100%;
+    background: linear-gradient(-45deg, #070707, #242424);
+	min-width: 900px;
+	min-height: 3000px;
 }
 .target {
     position: relative;
@@ -136,6 +141,7 @@ body::-webkit-scrollbar {
     color: white;
     animation: slide-in-home-text ease 1500ms;
     max-width: 250px;
+	font-size: 30px;
 
 }
 
@@ -153,6 +159,12 @@ body::-webkit-scrollbar {
     from {transform: translateX(-500%);}
     to {transform: translateX(0%);}
 }
+
+@keyframes slide-in-about {
+    from {transform: translateY(500%);}
+    to {transform: translateY(0%);}
+}
+
 @keyframes slide-in {
     from {transform: translateX(-500%);}
     to {transform: translateX(0%);}
@@ -169,4 +181,146 @@ body::-webkit-scrollbar {
 		background-position: 0% 50%;
 	}
 }
+
+
+.aboutheader {
+	color: white;
+	position: relative;
+	left: 45%;
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+
+.repo-title {
+	margin-top: 7px;
+	margin-left: 10px;
+	display: inline-block;
+	color: #fff;
+	margin-right: 0px;
+}
+
+svg {
+	margin-top: -4px;
+	position: relative;
+	fill: white;
+	top: 5px;
+}
+
+.infocontainer {
+	float: left;
+	border-color: #8352FD;
+	border-width: 3px;
+	border-style: solid;
+	height: 150px;
+	width: 400px;
+}
+.infocontainer2 {
+	float: right;
+	border-color: #8352FD;
+	border-width: px;
+	border-style: solid;
+	height: 150px;
+	width: 400px;
+}
+
+
+
+.small-spacer {
+	position: relative;
+	height: 60px;
+}
+
+.repo-github {
+	margin-left: -10px;
+	margin-top: 0px;
+	position: absolute
+}
+
+.repo-desc {
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-top: 10px;
+	color: #fff;
+	max-width: 400px;
+	min-width: 400px;
+}
+
+.repo-desc2 {
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-top: 10px;
+	color: #fff;
+	font-size: 18.5px;
+	max-width: 400px;
+	min-width: 400px;
+}
+
+
+.containerabout {
+	display: flex;
+	column-gap: 20px;
+	height: 120px;
+	position: relative;
+	top: 30px;
+	left: 27%;
+
+}
+.containerabout2 {
+	display: flex;
+	column-gap: 20px;
+	height: 120px;
+	position: relative;
+	top: 30px;
+	left: 27%;
+
+}
+
+.lang-container {
+	display: flex;
+	column-gap: 10px;
+}
+
+.lang {
+	position: relative;
+	border-style: solid;
+	border-color: #8352FD;
+	border-radius: 10px;
+	color: white;
+	bottom: 7px;
+	left: 8px;
+	text-align: center;
+	font-size: 16px;
+	background-color: #8352FD;
+	width: 14%;
+
+}
+.lang2 {
+	position: relative;
+	border-style: solid;
+	border-color: #8352FD;
+	border-radius: 10px;
+	color: white;
+	bottom: 7px;
+	left: 8px;
+	text-align: center;
+	font-size: 16px;
+	background-color: #8352FD;
+	width: 20%;
+
+}
+
+.pagespacer {
+	height: 1080px;
+}
+
+
+.master-div {
+	animation: slide-in-about ease 1500ms;
+}
+
+.constructionImage {
+
+}
+
+
 

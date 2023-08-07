@@ -4,12 +4,12 @@ import {FaBars} from 'react-icons/fa'
 
 // this dictates how small the window has to be horizontally for the
 // nav menu to dissapear and be replaced with a hamburger icon.
-var maxW = '600px';
+var maxW = '20px';
 
 // 
 //why are backticks used as syntax wtf.
 export const Nav = styled.nav`
-  background: rgb(9,9,9);
+  background: rgb(16,16,16);
   height: 60px;
   display: flex;
   justify-content: space-between;
@@ -32,7 +32,7 @@ export const NavLink = styled(Link)`
     }
 
     &:hover {
-        transform: scale(1.5) rotate(-2deg);
+        transform: scale(1.4) rotate(-2deg);
     }
 `;
 
@@ -55,7 +55,7 @@ export const NavMenu = styled.div`
     animation: NavMenuAnimation 1000ms;
     display: flex;
     align-items: center;
-   // margin-right: -24px;
+    margin-right: -24px;
 
     margin-right: 24px;
     
@@ -77,6 +77,25 @@ export const NavBtn = styled.nav`
     @media screen and (max-width: ${maxW}) {
         display: none;
     }
+`;
+
+export const NavBtn2 = styled.nav`
+    
+    margin-right: 24px;
+
+    
+`;
+export const NavBtnLinkFake = styled.h1`
+    border-radius: 10px;
+    background: #8352FD;
+    padding: 5px 22px;
+    color: #fff;
+    font-size: 17px;
+    width: 0px;
+    text-decoration: none;
+
+    margin-left: 24px;
+
 `;
 
 export const NavBtnLink = styled(Link)`
@@ -123,6 +142,113 @@ export const NavBtnLink2 = styled(Link)`
     @keyframes ButtonAnimation {
         0% {border-radius: 50px; padding: 0px 22px;}
         100% {border-radius: 10px; padding: 10px 22px;}
+    }
+
+`;
+
+export const NavBtnLink3 = styled(Link)`
+    border-radius: 10px;
+    animation-duration: 1.5s;
+    background: #8352FD;
+    padding: 10px 10px;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    margin-top: 7px;
+    margin-left: 180px;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: #fff;
+        color: #010606;
+        transform: scale(1.2) rotate(-2deg);
+        svg {
+            fill: black;
+            transform: scale(1.2) rotate(-2deg);
+        }
+    }
+
+`;
+
+export const NavBtnLink4 = styled(Link)`
+    border-radius: 10px;
+    animation-duration: 1.5s;
+    background: #8352FD;
+    padding: 10px 10px;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    margin-top: 7px;
+    margin-left: 150px;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: #fff;
+        color: #010606;
+        transform: scale(1.2) rotate(-2deg);
+        svg {
+            fill: black;
+            transform: scale(1.2) rotate(-2deg);
+        }
+    }
+
+`;
+
+export const NavBtnLink5 = styled(Link)`
+    border-radius: 10px;
+    animation-duration: 1.5s;
+    background: #8352FD;
+    padding: 10px 10px;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    margin-top: 7px;
+    margin-left: 166px;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: #fff;
+        color: #010606;
+        transform: scale(1.2) rotate(-2deg);
+        svg {
+            fill: black;
+            transform: scale(1.2) rotate(-2deg);
+        }
+    }
+
+`;
+export const NavBtnLink6 = styled(Link)`
+    border-radius: 10px;
+    animation-duration: 1.5s;
+    background: #8352FD;
+    padding: 10px 10px;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    margin-top: 7px;
+    margin-left: 120px;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: #fff;
+        color: #010606;
+        transform: scale(1.2) rotate(-2deg);
+        svg {
+            fill: black;
+            transform: scale(1.2) rotate(-2deg);
+        }
     }
 
 `;
