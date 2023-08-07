@@ -18,7 +18,7 @@ export default function Navbar() {
                 About Me
             </NavLink>
             <NavBtn>
-                <NavBtnLink>Contact Me</NavBtnLink>
+                <NavBtnLink to="/contact">Contact Me</NavBtnLink>
             </NavBtn>
         </NavMenu>
 

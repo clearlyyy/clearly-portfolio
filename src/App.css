@@ -322,5 +322,13 @@ svg {
 
 }
 
+.about-construction {
+	animation: slide-in-about ease 1500ms;
+	color: white;
+	margin-top: 10%;
+	margin-left: 34%;
+		
+}
+
 
 
